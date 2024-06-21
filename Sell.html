@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlastiExchange</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .sell-start  .interested{
+      display: table;
+      margin: 0 auto;
+      font-size:28px;
+      padding: 20px;
+      }
+
+      .sell-start  h2{
+      display: table;
+      margin: 0 auto;
+      color: rgb(31, 103, 79);
+      font-size: 48px;
+      }
+
+      .sell-start  .chhota{
+      display: table;
+      margin: 0 auto;
+      font-size:16px;
+      padding: 20px;
+      text-align: center;
+      }
+
+      .sell-start .schedule-form-text{
+      display: table;
+      margin: 0 auto;
+      color: rgb(31, 103, 79);
+      font-size: 48px;
+      }
+
+      .schedule-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-form {
+    width: 450px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.schedule-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.schedule-form input[type="text"],
+.schedule-form input[type="date"],
+.schedule-form input[type="time"],
+.schedule-form input[type="address"] {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.schedule-form input[type="file"] {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.schedule-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class=" background-image"></div> -->
+    <nav>
+      <div class="container-fluid">
+        <a class="Logo" href="#">PlastiExchange</a>
+      </div>
+      <div class="left-items">
+        <ul class="list-a">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="#">shop</a></li>
+
+          <li><a href="#">sell</a></li>
+          <li><a href="#">Redeem</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <form class="loginbtn" role="Login">
+          <a href="login2.html">Sign up/ Login</a>
+        </form>
+      </div>
+    </nav>
+    <div class="sell-start">
+      <p class="interested">intereseted in Selling ?</p>
+      <h2>Waste is also Valuable</h2>
+      <p class="chhota">We are looking to recover and distribute high-quality waste plastic at the same time building a circular economy that ensures recovery of the material to re-enters the supply chain of good waste management system</p>
+      <p class="schedule-form-text"> schedule pickup with us</p>
+
+    </div>
+
+    <div class="schedule-container">
+      <div class="schedule-form" id="login-form">
+        <form action="#">
+            <div>
+            <label for="qntity">Plastic Quantity(approx)</label>
+            <input type="text" placeholder="Quantity" class="Quantity"  required>
+
+            <label for="fileupload"> Select a file to upload</label> 
+            <input type="file" name="fileupload" value="fileupload" id="fileupload">
+
+            <label for="dte">date</label>
+            <input type="date" placeholder="Date" class="Date" required>
+            
+            <label for="tme">Time</label>
+            <input type="Time" placeholder="Date" class="Date" required>
+
+            <label for="aress">Address</label>
+            <input type="address" placeholder="Address" class="address" required>
+
+            
+            </div>
+            
+            <button class="submitbtn" type="submit">submit</button>
+        </form>
+        
+    </div>
+    </div>
+    </div>
+
+    
+
+
+   <!-- <div class = schedule-form>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+   </div> -->
+
+<!-- footer of the website -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlastiExchange</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class=" background-image"></div> -->
+    <nav>
+      <div class="container-fluid">
+        <a class="Logo" href="#">PlastiExchange</a>
+      </div>
+      <div class="left-items">
+        <ul class="list-a">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="Sell.html">sell</a></li>
+          <li><a href="#">Redeem</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <form class="loginbtn" role="Login">
+          <a href="">Sign up/ Login</a>
+        </form>
+      </div>
+    </nav>
+    <div class="login-background">
+    <div class="login-container">
+    <div class="login2" id="login-form">
+        <h3>Login</h3>
+        <form action="#">
+            <div>
+            <label for="uname">Username</label>
+            <input type="text" placeholder="Username" class="Username2"  required>
+
+            <label for="pword">Password</label>
+            <input type="password" placeholder="Password" class="password2" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <div>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            <button class="loginBtn" type="submit">Login</button>
+        </form>
+        <div class="toggle-link">
+          <a href="#" onclick="toggleForm('signup')">New User?</a><span>Sign up</span>
+      </div>
+      <span class="seprator">or</span>
+      <div class="login-g">
+        <div class="google">
+          <img src="images/google.png" alt="..">log in with google
+        </div>
+      <div class="facebook">
+        <img src="images/facebook.png" alt="...">log in with facebook
+
+      </div>
+        
+      </div>
+    </div>
+    </div>
+
+    <!-- signup-form -->
+    <div class="login-container flex-signup">
+      <div class="login2" id="signup-form" style="display: none;">
+          <h3>Sign-Up</h3>
+          <form action="#">
+              <div>
+              <label for="uname">First Name</label>
+              <input type="text" placeholder="Username" class="Username2"  required>
+
+              <label for="uname">Last Name</label>
+              <input type="text" placeholder="Username" class="Username2"  required>
+
+              <label for="uname">E-mail</label>
+              <input type="email" placeholder="Email" class="Email2"  required>
+  
+              <label for="pword">Password</label>
+              <input type="password" placeholder="Password" class="password2" required>
+
+              <label for="pword">Re-Password</label>
+              <input type="password" placeholder="Password" class="password2" required>
+              <button class="loginBtn" type="submit">Sign-Up</button>
+              <!-- <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              
+              <div>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+              </div> -->
+              </div>
+          </form>
+          <div class="toggle-link">
+            <a href="#" onclick="toggleForm('login')">Already have an account?</a><span>Login</span>
+        </div>
+      </div>
+      </div>
+    <!-- image in the side -->
+
+    <!-- <div class="image-60"></div> -->
+  </div>
+
+<!-- footer of the website -->
+
+
+<script>
+  function toggleForm(formType) {
+      if (formType === 'login') {
+          document.getElementById('login-form').style.display = 'block';
+          document.getElementById('signup-form').style.display = 'none';
+      } else if (formType === 'signup') {
+          document.getElementById('login-form').style.display = 'none';
+          document.getElementById('signup-form').style.display = 'block';
+      }
+  }
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
